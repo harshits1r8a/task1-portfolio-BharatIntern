@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Aditya Kumar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+</head>
+
+<body>
+    <div id="hero" id="overlay" id="home">
+        <header>
+            <div class="container">
+                <nav class="navbar">
+
+                    <div class="heading">
+                        <h1>AK</h1>
+                    </div>
+                    <div class="menu">
+                        <ul>
+
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="btn"><a href="">Subscribe <i class="fas fa-thumbs-up"></i></a></div>
+
+                </nav>
+
+                <div class="nav-content">
+                    <h3>Hello, I'm</h3>
+                    <h1>Aditya <span class="bg-primary">Kumar</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, modi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, aliquam?</p>
+
+                    <div class="btn"><a href="#about">Read More <i class="fas fa-user"></i></a></div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <div class="about">
+
+                <div class="about-img">
+                    <!-- <img src="./img/ad.jpg" alt=""> -->
+                </div>
+
+                <div class="about-content">
+                    <h1>Hello! <br> <Span class="bg-primary">I'm Aditya</Span></h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione dolorem itaque provident
+                        impedit numquam repellendus at voluptatem? Iste, possimus laboriosam! Lorem ipsum dolor sit,
+                        amet consectetur adipisicing elit. Doloribus reiciendis illum voluptas officia praesentium! Et
+                        dignissimos alias minus magni cumque.</p>
+                        
+                        <div class="btn"><a href="#home">Read More <i class="fas fa-user"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- w;eif[q'ewfbpqwefiweifqpefiqwpfksefyp] -->
+        <section id="service">
+            <h1 id="headone">Our <span class="bg-primary">Service</span></h1>
+            <div class="container">
+
+                <div class="box">
+                    <i id="U" class="fas fa-user"></i>
+                    <h5>Web Development</h5>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex veritatis voluptas incidunt repellat! Architecto omnis alias deserunt labore sapiente!
+                        </p>
+                    </div>
+                    <div class="btn"><a href="#about">Read More <i class="fas fa-star"></i></a></div>
+                </div>
+                <div class="box">
+                    <i id="U" class="fas fa-book"></i>
+                    <h5>Web Development</h5>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex veritatis voluptas incidunt repellat! Architecto omnis alias deserunt labore sapiente!
+                        </p>
+                    </div>
+                    <div class="btn"><a href="#about">Read More <i class="fas fa-user"></i></a></div>
+                </div>
+                <div class="box">
+                    <i id="U" class="fas fa-phone"></i>
+                    <h5>Web Development</h5>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex veritatis voluptas incidunt repellat! Architecto omnis alias deserunt labore sapiente!
+                        </p>
+                    </div>
+                    <div class="btn"><a href="#about">Read More <i class="fas fa-user"></i></a></div>
+                </div>
+        </div>
+    </section>
+
+    <!-- <section id="social">
+        <h1 id="headone">Our <span class="bg-primary">Social</span></h1>
+        <div class="socialbox">
+            <i class="fa fa-facebook-square"></i>
+        </div>
+    </section> -->
+
+    <section id="contact">
+        <h1 id="headone">Get In <span class="bg-primary">Touch</span> </h1>
+
+        <div class="container">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+    </section>
+
+
+    <footer id="myfooter">
+        <p>Copyright &copy; | Aditya kumar</p>
+    </footer>
+    
+</body>
+
+</html>
